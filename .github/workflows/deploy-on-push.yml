@@ -4,9 +4,9 @@ on: [push]
 jobs: 
     deploy-app:
       runs-on: ubuntu-latest
-      step: 
+      steps: 
        - name: check out the code to build server
-         uses: action/checkout@v3
+         uses: actions/checkout@v3
        - name: copy file to server
          uses: appleboy/scp-action@master
          with:
